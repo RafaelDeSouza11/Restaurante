@@ -457,6 +457,7 @@ footer {
 /* Estilo para telas maiores (desktops e tablets) */
 @media (min-width: 769px) {
     .cabeçalho {
+        justify-content: space-between;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -488,20 +489,43 @@ footer {
 /* Estilo para telas pequenas (celulares) */
 @media (max-width: 768px) {
     /* Ajuste do cabeçalho */
+    
     .cabeçalho {
-        display: block;
+        
+        display: inline-block; /* Mantém os elementos na mesma linha */
         text-align: center;
-        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+
+    }
+
+    .txt-link {
+        display: inline-block; /* Mantém os elementos na mesma linha */
+        display: inline-block; /* Garante que o texto fique alinhado com o ícone */
+        vertical-align: middle; /* Alinha verticalmente com o ícone */
+    }
+    .iconecabeçalho .txt-link {
+        
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0; /* Remove qualquer margem à esquerda do texto */
+        
+        
+        font-size: 5px;
     }
     
     /* Centraliza o menu e os itens */
     .menu ul {
         padding: 0;
-        display: block;
-        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
     .menu ul li {
-        margin-bottom: 15px;
+      
     }
 
     /* Ícones e texto do cabeçalho mais próximos */
@@ -513,6 +537,10 @@ footer {
     
     .iconecabeçalho .icon {
         margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .doistituloum, .doistitulodois, .doistitulotres {
