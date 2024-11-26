@@ -491,6 +491,53 @@ footer {
     align-items: center;
 }
 
+
+
+/*responsividade*/
+
+@media screen and (max-width:360px){
+    
+.doistitulodois{
+    font-size: 45px;
+    margin: 5px;
+
+}
+
+.doistitulo .doistitulotres{
+    
+    margin: 30px;
+    font-family: "Special Elite", system-ui;
+    color: #9E7A41;
+    font-weight: bold;
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 769px) {
     .cabeçalho {
         display: flex;
@@ -511,9 +558,7 @@ footer {
     .doisitaliann-line {
         display: flex;
     }
-    .doistitulotres {
-        margin-top: 50px;
-    }
+    
     /* Ajuste no tamanho das imagens, para telas grandes */
     .pizza-image, .pizza-imagetres, .drink-image {
         max-width: 100%;
@@ -551,13 +596,7 @@ footer {
         margin-right: 5px;
     }
 
-    /* Títulos centralizados e ajustados */
-    .doistituloum, .doistitulodois, .doistitulotres {
-        text-align: center;
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-
+    
     /* Tamanho das imagens ajustado para celulares */
     .pizza-image, .pizza-imagetres, .drink-image {
         max-width: 100%;
@@ -577,10 +616,7 @@ footer {
 
 /* Estilo para telas muito pequenas (exemplo: smartphones de tela muito pequena) */
 @media (max-width: 480px) {
-    .doistituloum, .doistitulodois, .doistitulotres {
-        font-size: 18px;
-    }
-
+   
     .iconecabeçalho .txt-link {
         font-size: 14px;
     }
